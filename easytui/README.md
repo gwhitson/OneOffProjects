@@ -1,4 +1,4 @@
-EasyTUI!
+EasyTUI
 a simple python library for creating simple TUI applications
 
 currently intended for single pane applications and just keyboard input
