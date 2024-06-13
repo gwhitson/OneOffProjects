@@ -34,6 +34,7 @@ def update(c: dict) -> dict:
 
 
 def display(c: dict):
+    print("\033[H\033[2J")
     for y in range(rows):
         row = ""
         for x in range(cols):
@@ -54,6 +55,7 @@ def main():
     cells[66] = 1
     display(cells)
     while True:
+        print("\nenter to continue")
         input()
         cells = update(cells)
         display(cells)

@@ -52,6 +52,7 @@ func Update (c [512]int) [512]int {
 }
 
 func Display(c [512]int) {
+    fmt.Print("\033[H\033[2J")
     for y := 0; y < rows; y++ {
         for x := 0; x < cols; x++ {
             str := "."
@@ -77,6 +78,6 @@ func main () {
         cells = Update(cells)
         Display(cells)
         fmt.Println()
-        time.Sleep(20 * time.Millisecond)
+        time.Sleep(50 * time.Millisecond)
     }
 }
